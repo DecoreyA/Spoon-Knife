@@ -1,20 +1,38 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Spoon-Knife</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8" />
+  <title>XONJX 13th Grade Sign Up</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
 
-<img src="forkit.gif" id="octocat" alt="" />
+<h1>XONJX 13th Grade Sign Up</h1>
+<p>Register below and then proceed with payment.</p>
 
-<!-- Feel free to change this text here -->
-<p>
-  Fork me? Fork you, @octocat!
-</p>
+<form id="signup" action="https://example.com/signup" method="post">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="grade">Grade</label>
+  <input type="text" id="grade" name="grade" value="13" readonly>
+
+  <button type="submit">Sign Up</button>
+</form>
+
+<h2>Payment</h2>
+<p>After signing up, use PayPal to complete your registration:</p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_xclick">
+  <input type="hidden" name="business" value="you@example.com">
+  <input type="hidden" name="item_name" value="XONJX 13th Grade Enrollment">
+  <input type="hidden" name="amount" value="20.00">
+  <input type="hidden" name="currency_code" value="USD">
+  <input type="submit" value="Pay Now">
+</form>
 
 </body>
 </html>
